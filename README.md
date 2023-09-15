@@ -1,8 +1,6 @@
 # server-side-aec
 Projeto backend - Site Aprender &amp; Crescer
 
-# Download do Projeto
-git clone https://github.com/luizrfurt/server-side-aec.git
 
 # Após clonar, execute o seguinte comando:
 npm install
