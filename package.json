@@ -24,6 +24,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@angular/cli": "^16.2.2",
     "@typegoose/typegoose": "^11.5.0",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.9",
