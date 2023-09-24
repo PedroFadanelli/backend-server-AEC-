@@ -1,4 +1,7 @@
 import { DocumentType, getModelForClass, index, modelOptions, pre, prop } from "@typegoose/typegoose";
+import { Presentation } from "../models/adm.model";
+
+
 
 @index({ title: 1 })
 @modelOptions({

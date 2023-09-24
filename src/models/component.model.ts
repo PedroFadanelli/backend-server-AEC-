@@ -1,7 +1,11 @@
-;;
+class Component {
+  type: string;
+  data: any;
+}
+
   
 import { NextFunction, Request, Response } from "express";
-import { Presentation, Component } from "./presentation.model";
+import { Presentation } from "./presentation.model";
 
 export const createPresentationHandler = async (
   req: Request,
@@ -9,9 +13,9 @@ export const createPresentationHandler = async (
   next: NextFunction
 ) => {
   try {
-    const presentation = new Presentation({
-      title: "Apresentação de conteúdo",
-      description: "Esta é uma apresentação de conteúdo",
+    const presentation: Presentation = new Presentation({
+      title: req.body.title,
+      description: req.body.description,
       components: [
         new Component({
           type: "carousel",
@@ -43,9 +47,6 @@ export const createPresentationHandler = async (
         }),
       ],
     });
-    
-    await presentation.save();
-    
 
     await presentation.save();
 
